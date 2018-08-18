@@ -41,7 +41,6 @@ not flat.
 1. `flatten.py` -  Flatten function
 2. `test_cases_flatten.py` - test case to test the flatten function
 
-
 ## Follow-up Email
 Semi-structured data formats such as JSON, Avro, and others have become the de facto form in which this data is sent and stored. Semi-structured data is easy for these applications to create and capable of representing a wide array of information.
 
@@ -56,14 +55,13 @@ The flexibility of schemaless design and the ability to represent a wide range o
 1. The current approach needs to transform semi-structured data into a fixed schema before loading it into the data warehouse.
 2. This approach creates a very fragile data pipeline that requires significant maintenance. Every change in the data—adding a new attribute, eliminating an attribute or adding a new level of nested information—breaks the data pipeline such that information is lost until the transformation and attribute extraction is updated to handle the new data structure.
 
-
 ## Is there an alternative way of tackling the problem that they should consider?
-TO handel semistructured data efficiently you need
+To handel semistructured data efficiently you need the following:
 - Flexible-schema datatype: load semistructured data without much transformation
 - Storage optimization: transparently converted to optimized internal storage format
 - Query optimization: for fast and efficient SQL querying
 
-we can get the above With a combination of Aapche Spark + NoSQL database on cloud
+we can get the above With a combination of Aapche Spark + NoSQL database on cloud.
 1. **NoSQL data platform** to store and analyze semi-structured data. Systems such as Hadoop can adapt to the rapid evolution in semistructured data because they can store that data without requiring definition of a fixed schema. 
 2. **Apache Spark** can be use for high-performance querying, particularly querying that combines semi-structured and
 structured data. Spark SQL provides a natural syntax for querying JSON data along with automatic inference of JSON schemas for both reading and writing data. Spark SQL understands the nested fields in JSON data and allows users to directly access these fields without any explicit transformations.

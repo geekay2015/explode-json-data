@@ -49,7 +49,11 @@ Two of the key attributes that distinguish semistructured data from structured d
 - Also unlike structured data, which represents data in a flat table, semi-structured data can contain hierarchies of nested
 information.
 
-The flexibility of schemaless design and the ability to represent a wide range of information are key reasons that semi-structured data has become so widely used. New and richer information can easily be added to the data at any time However, the flexibility and expressiveness of schemaless design create challenges when the data needs to be analyzed. As the use of semi-structured data formats has increased, so has the need to analyze that data. Although a limited amount of analysis can be done on semi-structured data in isolation, the most valuable insights come from bringing semi-structured data together with other data, particularly structured relational data. Relational databases were not designed to store and process semi-structured data. They were architected based on the assumption that a static schema could be determined in advance. That design assumption has made possible a wide array of optimizations—pruning, predicate push-down, and others—but at the cost of sacrificing the flexibility that schema-on-read offers.
+The flexibility of schemaless design and the ability to represent a wide range of information are key reasons that semi-structured data has become so widely used. New and richer information can easily be added to the data at any time.
+
+However, the flexibility and expressiveness of schemaless design create challenges when the data needs to be analyzed. As the use of semi-structured data formats has increased, so has the need to analyze that data. Although a limited amount of analysis can be done on semi-structured data in isolation, the most valuable insights come from bringing semi-structured data together with other data, particularly structured relational data. 
+
+Relational databases were not designed to store and process semi-structured data. They were architected based on the assumption that a static schema could be determined in advance. That design assumption has made possible a wide array of optimizations—pruning, predicate push-down, and others—but at the cost of sacrificing the flexibility that schema-on-read offers.
 
 ## Do you see any potential problems with the approach they're taking? 
 1. The current approach needs to transform semi-structured data into a fixed schema before loading it into the data warehouse.

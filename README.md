@@ -1,5 +1,10 @@
 # Explode the nested dictionaries(JSON Objects)
 
+## Goals & Objective
+1. implent a dictionary flattening function
+2. Test it on general and edge test case
+3. Add exception handling to faile it gracefully
+
 ## Use Case:-
 How much wood would a woodchuck chuck if a woodchuck could chuck wood?
 
@@ -36,9 +41,13 @@ not flat.
     "wood_chucked_lbs": 2281
 }
 ```
+## Dependencies
+1. Python 3
+2. Pycharm IDE
+3. Packages used - JSON, Unittest
 
-## Project Structure
-1. `flatten.py` -  Flatten function
+## Code Structure
+1. `flatten.py` -  Flatten function to explode the input dictionary
 2. `test_cases_flatten.py` - test case to test the flatten function
 
 ## Follow-up Email

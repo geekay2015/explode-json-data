@@ -1,5 +1,6 @@
 # Explode the nested dictionaries(JSON Objects)
 
+
 ## Goals & Objective
 1. implent a dictionary flattening function
 2. Test it on general and edge test case
@@ -41,14 +42,23 @@ not flat.
     "wood_chucked_lbs": 2281
 }
 ```
-## Dependencies
-1. Python 3
+## Environment used
+1. Python 3.6.0 |Anaconda 4.3.0 (x86_64)
 2. Pycharm IDE
-3. Packages used - JSON, Unittest
+3. Packages used - JSON, Unittest, PPRINT
 
 ## Code Structure
 1. `flatten.py` -  Flatten function to explode the input dictionary
 2. `test_cases_flatten.py` - test case to test the flatten function
+3. Program Output 
+```
+{'aliases.0': 'Chuck Force 1',
+ 'aliases.1': 'Whistlepig',
+ 'name': "Cap'n Chuck",
+ 'physical.height_in': 26,
+ 'physical.weight_lb': 18,
+ 'wood_chucked_lbs': 2281}
+ ````
 
 ## Follow-up Email
 Semi-structured data formats such as JSON, Avro, and others have become the de facto form in which this data is sent and stored. Semi-structured data is easy for these applications to create and capable of representing a wide array of information.

@@ -1,7 +1,7 @@
 # Explode the nested dictionaries(JSON Objects)
 
 
-## Goals & Objective
+## Objective
 1. implent a dictionary flattening function
 2. Test it on general and edge test case
 3. Add exception handling to faile it gracefully
@@ -42,6 +42,10 @@ not flat.
     "wood_chucked_lbs": 2281
 }
 ```
+
+## Assumption
+1.  the input data has a static schema
+
 ## Environment used
 1. Python 3.6.0 |Anaconda 4.3.0 (x86_64)
 2. Pycharm IDE

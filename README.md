@@ -45,7 +45,7 @@ not flat.
 ## Environment used
 1. Python 3.6.0 |Anaconda 4.3.0 (x86_64)
 2. Pycharm IDE
-3. Packages used - JSON, Unittest, PPRINT
+3. Packages used - json, Unittest, pprint
 
 ## Code Structure
 1. `flatten.py` -  Flatten function to explode the input dictionary

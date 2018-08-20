@@ -4,7 +4,7 @@
     <content url="file://$MODULE_DIR$" />
     <content url="jar:///usr/local/spark2/python/lib/py4j-0.10.7-src.zip!/" />
     <content url="jar:///usr/local/spark2/python/lib/pyspark.zip!/" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.6" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">

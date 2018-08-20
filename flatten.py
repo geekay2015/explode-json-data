@@ -11,6 +11,7 @@
 # Import the modules
 from __future__ import print_function
 import json
+from pprint import pprint
 
 
 class NotADictionary(Exception):
@@ -46,11 +47,12 @@ def flatten(obj: dict) -> dict:
     if not bool(dict):
         raise EmptyDictionary
 
-    # create empty output data dictionary
+    # create empty output dictionary
     exploded_data = {}
 
     # explode function
     def explode_json(json_data, name=''):
+
         # check if the object type is a dictionary
         if type(json_data) is dict:
             for key in json_data:
@@ -95,7 +97,7 @@ if __name__ == '__main__':
     # print(wood_chuck_data)
 
     # explode the input json
-    print(flatten(wood_chuck_data))
+    pprint(flatten(wood_chuck_data))
 
 
 

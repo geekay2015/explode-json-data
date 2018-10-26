@@ -8,7 +8,7 @@ This python script can be executed as follows,
     --master local[*] \
     --py-files dependencies.zip \
     --files etl_config.json \
-    etl_job.py
+    flatten_json_spark.py
 """
 # imports from Python Standard Library
 from os import listdir, path
